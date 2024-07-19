@@ -56,6 +56,16 @@ Affiche le statut des services.
 ```sh
 make status
 ```
+### `create-db`
+Crée la base de données.
+```sh
+make create-db
+```
+### `migrate`
+Exécute les migrations.
+```sh
+make migrate
+```
 ## Utilisation
 1. Assurez-vous que Docker et Docker Compose sont installés sur votre machine.
 2. Placez le fichier `Makefile` à la racine de votre projet Symfony.
@@ -68,6 +78,14 @@ make status
 - Pour reconstruire les services après avoir apporté des modifications au `Dockerfile` ou à `docker-compose.yml` :
   ```sh
   make build
+  ```
+- Pour créer la base de données :
+  ```sh
+  make create-db
+  ```
+- Pour exécuter les migrations :
+  ```sh
+  make migrate
   ```
 - Pour exécuter une commande Symfony CLI dans le conteneur `app` :
   ```sh
